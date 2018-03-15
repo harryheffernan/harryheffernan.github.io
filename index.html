@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harry's Shot Data </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+  <body>
+  	<h1 id="title">NBA Shooting Ability</h1>
+  	<form id='stat'>
+	  <input type="radio" name="gender" value="raw" checked> Raw Data<br>
+	  <input type="radio" name="gender" value="metric"> Compared to League Average<br>
+	</form>
+  	<input class="typeahead" type="text" placeholder="Type Player Here">
+  	<button type="button" id="submit" >submit</button>
+    <div id="viz" class="svg-container"></div>
+<!--     <img id="warm" src="warm.png">
+ -->    <script type="text/javascript" src="bundle.js"></script>
+  </body>
+</html>
