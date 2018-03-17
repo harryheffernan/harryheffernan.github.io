@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "41b26d50dd8579e5ac46"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "760886e3184419d7db90"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -21920,13 +21920,13 @@ var Bins = function () {
 			// Define the div for the tooltip
 			var div = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0);
 			sel.attr('x', function (d) {
-				return xScale(2 * d.basketDist) + (xScale(2) - xScale(2 * Math.sqrt(d.attValue / _this.maxAtt))) / 2;
+				return xScale(2 * d.basketDist) + (xScale(2) - xScale(2 * Math.sqrt(d.attValue / _this.maxAtt))) / 2 || 0;
 			}).attr('y', function (d) {
-				return yScale(d.playerDist) - yScale(yMax - 1) + (yScale(yMax - 1) - (yScale(0) - yScale(Math.sqrt(d.attValue / _this.maxAtt)))) / 2;
+				return yScale(d.playerDist) - yScale(yMax - 1) + (yScale(yMax - 1) - (yScale(0) - yScale(Math.sqrt(d.attValue / _this.maxAtt)))) / 2 || 0;
 			}).attr('width', function (d) {
-				return xScale(2 * Math.sqrt(d.attValue / _this.maxAtt));
+				return xScale(2 * Math.sqrt(d.attValue / _this.maxAtt)) || 0;
 			}).attr('height', function (d) {
-				return yScale(0) - yScale(Math.sqrt(d.attValue / _this.maxAtt));
+				return yScale(0) - yScale(Math.sqrt(d.attValue / _this.maxAtt)) || 0;
 			}).style("fill", function (d) {
 				if (statType == 'raw') {
 					return _this.color(1.0 * d.madeValue / (d.attValue || 10000000));
