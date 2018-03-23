@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +9,33 @@
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
   <body>
-  	<h1 id="title">NBA Shooting Ability</h1>
+    <div id="header">
+      <h1 id="title">NBA Shooting Ability</h1>
+    </div>
   	<form id='stat'>
 	  <input type="radio" name="gender" value="raw" checked> Raw Data<br>
 	  <input type="radio" name="gender" value="metric"> Compared to League Average<br>
-	</form>
+	   </form>
   	<input class="typeahead" type="text" placeholder="Type Player Here">
   	<button type="button" id="submit" >submit</button>
+    <div id="head"></div>
+    <table id="bio">
+      <tr>
+        <th>Season</th>
+        <th>Age</th> 
+        <th>GP</th>
+        <th>Min</th>
+        <th>PTS</th>
+        <th>REB</th>
+        <th>AST</th>
+        <th>BLK</th>
+        <th>STL</th>
+        <th>TOV</th>
+        <th>FG%</th>
+        <th>FT%</th>
+        <th>3PT%</th>
+      </tr>
+    </table>
     <div id="viz" class="svg-container"></div>
 <!--     <img id="warm" src="warm.png">
  -->    <script type="text/javascript" src="bundle.js"></script>
