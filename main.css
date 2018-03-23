@@ -1,11 +1,23 @@
 html,
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  background-image: url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2710_i200_w640.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0.93) 100%), url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2710_i200_w640.jpeg);
+  font-family: 'Oswald', sans-serif; }
+
+#header {
+  width: 350px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-sizing: border-box; }
 
 .bars {
   fill: #4E7798;
   opacity: 0.8; }
+
+#stat {
+  color: #ffffff; }
 
 form {
   padding-left: 40px;
@@ -15,6 +27,30 @@ form {
   padding-left: 60px;
   width: 50%;
   height: auto; }
+
+#head img {
+  width: 275px;
+  height: auto; }
+
+#head {
+  position: absolute;
+  top: 5px;
+  left: 400px; }
+
+#bio {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #ffffff;
+  float: right; }
+
+th, td {
+  padding: 3px;
+  text-align: left; }
+
+table, th, td {
+  border: 1px solid white;
+  border-spacing: 0 1px; }
 
 .svg-container {
   display: inline-block;
@@ -54,11 +90,12 @@ div.tooltip {
   position: fixed;
   left: 0px;
   right: 0px;
-  top: 150px;
+  top: 180px;
   bottom: 0px; }
 
 .typeahead {
-  margin-left: 40px; }
+  margin-left: 40px;
+  color: white; }
 
 .tt-query,
 .tt-hint {
@@ -71,6 +108,10 @@ div.tooltip {
   border-radius: 8px;
   outline: none; }
 
+.typeahead.tt-input {
+  background-color: white !important;
+  color: black; }
+
 .tt-input {
   /* UPDATE: newer versions use tt-input instead of tt-query */
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
@@ -79,9 +120,20 @@ div.tooltip {
   color: #999;
   visibility: hidden; }
 
+g.axes line {
+  stroke: white; }
+
+g.axes path {
+  stroke: white; }
+
+g.axes text {
+  fill: white; }
+
 h1 {
-  color: steelblue;
-  padding-left: 40px; }
+  color: white;
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
 
 .tt-menu {
   /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
