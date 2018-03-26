@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "baa25580913128557e48"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0139c971412709e0b4fc"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -31723,6 +31723,9 @@ d3.json("player_matricies.json", function (playerData) {
 					stats.append('td').html(function (d) {
 						return d.seasonId;
 					}).classed('cell seasonId', true);
+					stats.append('td').html(function (d) {
+						return d.teamAbbreviation;
+					}).classed('cell team', true);
 					stats.append('td').html(function (d) {
 						return d.playerAge;
 					}).classed('cell playerAge', true);

@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-image: url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2710_i200_w640.jpeg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93) 0%, rgba(0, 0, 0, 0.93) 100%), url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2710_i200_w640.jpeg);
+  background-image: url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2734_i240_w1500.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.85) 100%), url(https://www.fractalcamo.com/uploads/5/9/0/2/5902948/s189772745713394276_p2734_i240_w1500.jpeg);
   font-family: 'Oswald', sans-serif; }
 
 #header {
