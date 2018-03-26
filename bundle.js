@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0139c971412709e0b4fc"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "d939dff4d418eb6c9279"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -32271,7 +32271,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var playerData = void 0;
 var MARGIN = { top: 20, right: 30, bottom: 20, left: 30 };
 var PADDING = { top: 60, right: 60, bottom: 60, left: 60 };
-var OUTER_WIDTH = 875;
+var OUTER_WIDTH = 825;
 var OUTER_HEIGHT = 500;
 
 var Bins = function () {
